@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+</head>
+<style>
+    html,body{
+        margin: 0;
+    }
+    body{
+        background-image: url(https://www.freecodecamp.org/news/content/images/2021/06/w-qjCHPZbeXCQ-unsplash.jpg);
+    }
+    .banner{
+        display:flex;
+        justify-content: space-between;
+        background-image: url(https://freedesignfile.com/upload/2017/02/Hearts-fly-valentine-backgrounds-vectors-material-07.jpg);
+        color: aqua;
+        padding: 24px 48px;
+    }
+    .head_text{
+        display: flex;
+        font-size: 40px;
+        font-family: fantasy;
+    }
+    .feed{
+        display: flex;
+        justify-content: center;
+        align-items: row ;
+        flex-direction: column;
+        width: 100%;
+        height: 300px;
+    }
+    .feed_main{
+        display: flex;
+        justify-content: space-around;
+    }
+    .text{
+        display: flex;
+        justify-content: space-around;
+        font-family: fantasy;
+        font-size: 24px;
+        font-weight: 500;
+        color: blue;
+    }
+    .sauce{
+        margin-right: 14px;
+    }
+    .row-1{
+        display: flex;
+    }
+    .wid{
+        width: 50%;
+    }
+    @media only screen and (max-width: 600px){
+        .banner{
+            display: flex   ;
+            flex-direction: column;
+            align-items: center;
+        }
+        .head_text{
+            flex-direction: column;
+            align-items: center;
+        }
+        .wid{
+            width: auto;
+        }
+        .feed{
+            height: 700px   ;
+        }
+        .feed_main{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .text{
+            flex-direction: column;
+        }
+
+    }
+
+
+
+</style>
+<body>
+    <div class="banner">
+        <div class="head_text"> Valentine Restaurant
+        </div>
+        <div>
+        <a href="" class="sauce"> Page 1</a>
+        <a href="" class="sauce"> Page 2</a>
+        <a href="" class="sauce"> Page 3</a>
+        </div>
+    </div>
+    <div class="feed">
+        <div class="feed_main">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Ice_cream_with_whipped_cream%2C_chocolate_syrup%2C_and_a_wafer_%28cropped%29.jpg/1200px-Ice_cream_with_whipped_cream%2C_chocolate_syrup%2C_and_a_wafer_%28cropped%29.jpg" alt="ice cream" style="width: 160px; height: 180px;">
+            <img src="https://img.wongnai.com/p/1920x0/2021/08/20/2ddfcc8988824e7281658ba6d7770506.jpg" alt="ice cream 2" style="width: 160px; height: 180px;">
+            <img src="https://www.seriouseats.com/thmb/LVJsAedOaklj5_UDuodJDTYsCQk=/1500x1125/filters:fill(auto,1)/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__2019__06__20190523-no-churn-blueberry-ice-cream-vicky-wasik-12-e3b2056ccd0c49509c5bc97054579821.jpg" alt="ice cream 3" style="width: 160px; height: 180px;">     
+        </div>
+        <div class="feed_main">
+            <div class="text"> Ice cream Premium </div>
+            <div class="text"> Ice cream Vanilla </div>
+            <div class="text"> Ice cream Red velvet</div>
+        </div>
+    </div>
+    <div class="row-1"> 
+        <div class="wid">
+            <img src="https://www.thespruceeats.com/thmb/BYOHKcXhja-ez7Fr9obgBrDHJ1Y=/3064x2042/filters:fill(auto,1)/easy-chocolate-ice-cream-recipe-1945798-hero-01-45d9f26a0aaf4c1dba38d7e0a2ab51e2.jpg" alt="food" style="width:100%; height: 300px;">
+        </div>
+        <div class="wid">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, amet, repudiandae, similique natus minima repellendus temporibus quod maiores enim eveniet a. Optio rem animi quis totam doloremque, vel minima deleniti.
+        </div>
+    </div>
+</body>
+</html>

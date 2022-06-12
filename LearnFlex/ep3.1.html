@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox CSS</title>
+    <style>
+        html,body{
+            margin: 0px;
+        }
+        .navbar{
+            display: flex;
+            justify-content: space-between;
+            padding: 24px 48px;
+            color: white;
+            background-color: black;
+        } 
+        .navbar a{
+            color: white;
+        }
+        .navbar_menu{
+            margin-right: 24px;
+        }
+        .Banner_Image{
+            width: 100%;
+            height: 300px;
+        }
+        .feed{  
+            display: flex;
+            justify-content:center;
+            align-items:row ;
+            flex-direction: column;
+            width: 100%;
+            height: 600px;
+        }
+        .feed_container{
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 48px;
+        }    
+        .Feed_Card{
+            width: 300px;
+            height: 200px;
+            border: 1px solid salmon;  
+        }
+        .footer{
+            padding: 24px; 
+            color: white;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+        }
+        .row-1{
+            display: flex;
+        }
+        .row-2{
+            display: flex; 
+            flex-direction: row-reverse;
+        }
+    </style>
+
+
+</head>
+<body>
+    <div class="navbar">
+        <div> LOGO  </div>
+        <div>
+        <a href=""class="navbar_menu"> Menu 1</a>
+        <a href=""class="navbar_menu">Menu 2</a>
+        <a href=""class="navbar_menu">Menu 3</a>
+        </div>
+    </div>
+    <div>
+        <img src="https://png.pngtree.com/thumb_back/fh260/background/20190222/ourmid/pngtree-banner-background-geometrydotted-line-backgroundsimplefashion-image_53191.jpg" alt="Banner Image" class="Banner_Image"> 
+    </div>
+    <div class="feed">
+        <div 
+            style="margin-bottom: 48px;"
+            class="feed_container">
+            <div class="Feed_Card"> Card1 </div>
+            <div class="Feed_Card"> Card2 </div>
+            <div class="Feed_Card"> Card3 </div>
+        </div>
+        <div class="feed_container">
+        <div class="Feed_Card"> Card4 </div>
+        <div class="Feed_Card"> Card5 </div>
+        <div class="Feed_Card"> Card6 </div>
+        </div>
+    </div>
+    <div class="row-1">   
+        <div style="width: 50%;">   
+            <img src="https://image.shutterstock.com/image-photo/chairs-umbrella-palm-beach-tropical-260nw-559599520.jpg" alt="beach" style="width: 100%;height: 400px;">
+        </div>
+        <div style="width: 50%;">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil iure eaque nisi possimus non, quasi ducimus consequuntur esse, necessitatibus repudiandae nostrum numquam natus autem, deleniti provident adipisci nemo doloribus. Veritatis cumque saepe libero obcaecati! Sint rem id voluptate doloribus natus debitis aut consectetur. Possimus itaque ab nulla. Mollitia laudantium ratione inventore ducimus! Eos ratione neque error nemo at ipsum rerum rem modi unde earum distinctio deleniti, quam architecto ea nostrum mollitia vitae facilis, sapiente assumenda maxime illum perferendis reprehenderit est! Numquam, maxime illo consequatur quia saepe dolorum vero atque ullam necessitatibus facilis error fugit laudantium perspiciatis optio magni pariatur suscipit?
+        </div>
+    </div>
+    <div class="row-2">   
+        <div style="width: 50%;">   
+            <img src="https://image.shutterstock.com/image-photo/chairs-umbrella-palm-beach-tropical-260nw-559599520.jpg" alt="beach" style="width: 100%;height: 400px;">
+        </div>
+        <div style="width: 50%;">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil iure eaque nisi possimus non, quasi ducimus consequuntur esse, necessitatibus repudiandae nostrum numquam natus autem, deleniti provident adipisci nemo doloribus. Veritatis cumque saepe libero obcaecati! Sint rem id voluptate doloribus natus debitis aut consectetur. Possimus itaque ab nulla. Mollitia laudantium ratione inventore ducimus! Eos ratione neque error nemo at ipsum rerum rem modi unde earum distinctio deleniti, quam architecto ea nostrum mollitia vitae facilis, sapiente assumenda maxime illum perferendis reprehenderit est! Numquam, maxime illo consequatur quia saepe dolorum vero atque ullam necessitatibus facilis error fugit laudantium perspiciatis optio magni pariatur suscipit?
+        </div>
+    </div>
+    <div class="footer">
+        footer
+    </div>
+    
+</body>
+</html>

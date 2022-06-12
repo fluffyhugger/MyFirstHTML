@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Responsive</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<style>
+     html,body{
+        margin: 0px;
+    }
+    .banner{
+        display: flex;
+        justify-content: space-between;
+        background-color: black;
+        color: white;
+        font-family: fantasy;
+        padding: 24px 48px;
+    }
+    .navbar_menu{
+        margin-right: 24px;
+    }
+    .banner_image{
+        width: 100%;
+        height: 300px;
+
+    }
+    .feed{
+        display: flex;
+        justify-content: center;
+        align-items: row ;
+        flex-direction: column;
+        width: 100%;
+        height: 600px;
+    }
+    .feed_container{
+        display: flex;
+        justify-content: space-around;
+    }
+    .feed_card{
+        width: 300px;
+        height: 200px;
+        border:1px solid salmon;
+    }
+    .row-1{
+        display: flex;
+    }
+    .row-2{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .foster{
+        display: flex;
+        justify-content: center;
+        background-color: black;
+        padding: 24px;
+        color: white;
+        font-family: 24px 
+    }
+    .col{
+        width: 50%;
+    } 
+    @media only screen and (max-width: 600px){
+        .banner{
+            padding: 24px ;
+        }
+        .feed_container{
+            flex-direction: column;
+            align-items:center;
+        }
+        .feed_card{
+            margin-top: 24px;
+        }
+        .feed{
+            height: auto;
+        }
+        .row-1{
+            flex-direction: column;
+        }
+        .row-2{
+            flex-direction: column;
+        } 
+        .col{
+            width: auto;
+            padding: 16px;
+        }
+
+    } 
+
+</style>
+<body>
+    <div class="banner"> 
+        <div> LOGO</div>
+        <div>
+            <a href="" class="navbar_menu"> Menu 1</a>
+            <a href="" class="navbar_menu"> Menu 2</a>
+            <a href="" class="navbar_menu"> Menu 3</a>
+        </div>
+    </div>
+    <img src="https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg?size=626&ext=jpg&ga=GA1.1.2131864772.1641772800" alt="image" class="banner_image">
+    <div class="feed">
+        <div 
+        style="margin-bottom: 48px;"
+        class="feed_container">
+        <div class="feed_card"> card 1</div>
+        <div class="feed_card"> card 2</div>
+        <div class="feed_card"> card 3</div>
+
+        </div>
+        <div
+        class="feed_container">
+        <div class="feed_card"> card 1</div>
+        <div class="feed_card"> card 2</div>
+        <div class="feed_card"> card 3</div>
+        </div>
+    </div>
+    <div class="row-1">
+        <div class="col">
+        <img src="https://www.planetware.com/photos-large/THA/thailand-krabi-railay-beach.jpg" alt="" style="width: 100%; height: 300px;">
+        </div>
+        <div class="col">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat quas eaque perspiciatis tempore! Quam praesentium harum dolorum sit dolorem eveniet exercitationem hic, sapiente impedit minima adipisci autem suscipit asperiores nisi!
+        </div>
+    </div>
+    <div class="row-2">
+        <div class="col">
+        <img src="https://www.planetware.com/photos-large/THA/thailand-krabi-railay-beach.jpg" alt="" style="width: 100%; height: 300px;">
+        </div>
+        <div class="col">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat quas eaque perspiciatis tempore! Quam praesentium harum dolorum sit dolorem eveniet exercitationem hic, sapiente impedit minima adipisci autem suscipit asperiores nisi!
+        </div>
+    </div>
+    <div class="foster"> Foster</div>
+
+</body>
+</html>
